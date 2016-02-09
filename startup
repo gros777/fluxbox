@@ -1,0 +1,41 @@
+#!/bin/sh
+#
+# fluxbox startup-script:
+#
+# Lines starting with a '#' are ignored.
+
+# Change your keymap:
+xmodmap "/home/jortiz/.Xmodmap"
+
+# Applications you want to run with fluxbox.
+# MAKE SURE THAT APPS THAT KEEP RUNNING HAVE AN ''&'' AT THE END.
+#
+# unclutter -idle 2 &
+# wmnd &
+# wmsmixer -w &
+# idesk &
+sleep 2 && gnome-settings-daemon &
+sleep 2 && compton -b -c &
+sleep 2 && xset -b &
+sleep 2 && nm-applet &
+sleep 2 && volumeicon &
+sleep 5 && nitrogen --restore &
+# sleep 2 && pcmanfm -d &
+sleep 2 && thunar --daemon &
+sleep 2 && shutter --min_at_startup &
+sleep 2 && xscreensaver -no-splash &
+#
+# Debian-local change:
+#   - fbautostart has been added with a quick hack to check to see if it
+#     exists. If it does, we'll start it up by default.
+which fbautostart > /dev/null
+if [ $? -eq 0 ]; then
+    fbautostart
+fi
+
+# And last but not least we start fluxbox.
+# Because it is the last app you have to run it with ''exec'' before it.
+
+exec fluxbox
+# or if you want to keep a log:
+# exec fluxbox -log "/home/jortiz/.fluxbox/log"

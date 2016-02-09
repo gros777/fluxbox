@@ -1,0 +1,162 @@
+[begin] (FluxBox)
+	[submenu] (Development)
+		[exec] (Accerciser) {accerciser}
+		[exec] (Anjuta) {anjuta}
+		[exec] (Builder) {gnome-builder}
+		[exec] (Database browser) {gda-browser-5.0}
+		[exec] (Devhelp) {devhelp}
+		[exec] (gitg) {gitg}
+		[exec] (Glade) {glade}
+		[exec] (ipython) {xterm -e ipython}
+		[exec] (MySQL Workbench) {mysql-workbench}
+		[exec] (Qt Assistant) {/usr/lib/qt/bin/assistant}
+		[exec] (Qt Designer) {/usr/lib/qt/bin/designer}
+		[exec] (Qt Linguist) {/usr/lib/qt/bin/linguist}
+		[exec] (Qt QDbusViewer) {/usr/lib/qt/bin/qdbusviewer}
+		[exec] (Qt4 Assistant) {assistant-qt4}
+		[exec] (Qt4 Designer) {designer-qt4}
+		[exec] (Qt4 Linguist) {linguist-qt4}
+		[exec] (Qt4 QDbusViewer) {qdbusviewer-qt4}
+		[exec] (Sublime Text 3 Dev) {subl3}
+	[end]
+	[submenu] (Editors)
+		[exec] (gedit) {gedit}
+	[end]
+	[submenu] (Games)
+		[submenu] (Arcade)
+			[exec] (Nibbles) {gnome-nibbles}
+			[exec] (Robots) {gnome-robots}
+		[end]
+		[submenu] (Board)
+			[exec] (Chess) {gnome-chess}
+			[exec] (Iagno) {iagno}
+			[exec] (Mahjongg) {gnome-mahjongg}
+		[end]
+		[submenu] (Card)
+			[exec] (AisleRiot Solitaire) {sol}
+			[exec] (Tali) {tali}
+		[end]
+		[submenu] (Puzzle)
+			[exec] (Atomix) {atomix}
+			[exec] (Five or More) {five-or-more}
+			[exec] (Four-in-a-row) {four-in-a-row}
+			[exec] (Hitori) {hitori}
+			[exec] (Klotski) {gnome-klotski}
+			[exec] (Lights Off) {lightsoff}
+			[exec] (Mines) {gnome-mines}
+			[exec] (Quadrapassel) {quadrapassel}
+			[exec] (Sudoku) {gnome-sudoku}
+			[exec] (Swell Foop) {swell-foop}
+			[exec] (Taquin) {gnome-taquin}
+			[exec] (Tetravex) {gnome-tetravex}
+		[end]
+		[exec] (2048) {gnome-2048}
+	[end]
+	[submenu] (Graphics)
+		[exec] (Image Viewer) {eog}
+	[end]
+	[submenu] (Multimedia)
+		[exec] (Brasero) {brasero}
+		[exec] (Cheese) {cheese}
+		[exec] (Music) {gnome-music}
+		[exec] (Sound Recorder) {gnome-sound-recorder}
+		[exec] (Spotify) {spotify}
+		[exec] (Videos) {totem}
+	[end]
+	[submenu] (Network)
+		[exec] (Avahi SSH Server Browser) {bssh}
+		[exec] (Avahi VNC Server Browser) {bvnc}
+		[exec] (Empathy) {empathy}
+		[exec] (Google Chrome) {google-chrome-stable}
+		[exec] (Polari) {gapplication launch org.gnome.Polari}
+		[exec] (Remote Desktop Viewer) {vinagre}
+		[exec] (Web) {epiphany}
+	[end]
+	[submenu] (Office)
+		[exec] (Calendar) {gnome-calendar}
+		[exec] (Contacts) {gnome-contacts}
+		[exec] (Dictionary) {gnome-dictionary}
+		[exec] (Document Viewer) {evince}
+		[exec] (Evolution) {evolution}
+	[end]
+	[submenu] (Other)
+		[exec] (compton) {compton}
+		[exec] (KeePass Password Safe) {keepass}
+		[exec] (Qt V4L2 test Utility) {qv4l2}
+		[exec] (Robomongo) {robomongo}
+		[exec] (Shutter) {shutter}
+	[end]
+	[submenu] (Shells)
+		[exec] (File Manager PCManFM) {pcmanfm}
+		[exec] (Files) {nautilus}
+		[exec] (Root Terminal) {gksu -l gnome-terminal}
+		[exec] (Terminal) {gnome-terminal}
+		[exec] (UXTerm) {uxterm}
+		[exec] (XTerm) {xterm}
+	[end]
+	[submenu] (System)
+		[submenu] (Settings)
+			[submenu] (GNOME)
+				[exec] (Network Connections) {nm-connection-editor}
+				[exec] (Privilege granting) {gksu-properties}
+			[end]
+			[submenu] (Xfce)
+				[exec] (Screensaver) {xscreensaver-demo}
+			[end]
+			[exec] (Database access control center) {gda-control-center-5.0}
+			[exec] (Desktop Preferences) {pcmanfm --desktop-pref}
+			[exec] (Disks) {gnome-disks}
+			[exec] (NVIDIA X Server Settings) {nvidia-settings}
+			[exec] (Passwords and Keys) {seahorse}
+			[exec] (Preferred Applications) {libfm-pref-apps}
+			[exec] (Rygel Preferences) {rygel-preferences}
+			[exec] (Search and Indexing) {tracker-preferences}
+			[exec] (Window Effects) {compton-conf}
+		[end]
+		[exec] (Avahi Zeroconf Browser) {avahi-discover}
+		[exec] (Color Profile Viewer) {gcm-viewer}
+		[exec] (dconf Editor) {dconf-editor}
+		[exec] (Disk Usage Analyzer) {baobab}
+		[exec] (GNOME System Monitor) {gnome-system-monitor}
+		[exec] (KeePassX) {keepassx}
+		[exec] (Logs) {gnome-logs}
+		[exec] (Network Tools) {gnome-nettool}
+		[exec] (Settings) {gnome-control-center --overview}
+		[exec] (System Log) {gnome-system-log}
+	[end]
+	[submenu] (Utilities)
+		[exec] (Archive Manager) {file-roller}
+		[exec] (Books) {gnome-books}
+		[exec] (Calculator) {gnome-calculator}
+		[exec] (Character Map) {gucharmap}
+		[exec] (Characters) {gapplication launch org.gnome.Characters}
+		[exec] (Clocks) {gnome-clocks}
+		[exec] (Desktop Search) {tracker-needle}
+		[exec] (Documents) {gnome-documents}
+		[exec] (Font Viewer) {gnome-font-viewer}
+		[exec] (Help) {yelp}
+		[exec] (KeePassX 2) {keepassx2}
+		[exec] (Maps) {gapplication launch org.gnome.Maps}
+		[exec] (Notes) {bijiben}
+		[exec] (Photos) {gnome-photos}
+		[exec] (Screen Reader) {orca --replace}
+		[exec] (Screenshot) {gnome-screenshot --interactive}
+		[exec] (Tweak Tool) {gnome-tweak-tool}
+		[exec] (Weather) {gapplication launch org.gnome.Weather.Application}
+	[end]
+	[separator]
+	[submenu] (FluxBox)
+		[workspaces] (Workspaces)
+		[submenu] (User Styles)
+			[stylesdir] (~/.fluxbox/styles)
+		[end]
+		[submenu] (System Styles) {Choose a style...}
+      			[stylesdir] (/usr/share/fluxbox/styles) 
+		[end]
+		[config] (Configure)
+		[reconfig] (Reconfig)
+		[restart] (Restart)
+		[separator]
+		[exit] (Exit)
+	[end]
+[end]
